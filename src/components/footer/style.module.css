@@ -1,0 +1,101 @@
+footer{
+   width: 100%;
+   background-color: #F8F8F8;
+   
+}
+.footer__top{
+   width: 100%;
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.footer__top h2{
+   color: #295DB5;
+   font-family: Montserrat;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 30px;
+   text-align: left;
+}
+.footer__logo{
+   width: 20%;
+}
+.footer__logo img{
+   width: 100%;
+}
+.footer__menu{
+   width: 20%;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+}
+.footer__menu .link{
+   color: #4F5665;
+   text-decoration: none;
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 30px;
+   text-align: left;
+}
+.footer__manzil{
+   width: 20%;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+   gap: 5px;
+}
+.footer__manzil span{
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 30px;
+   text-align: left;
+}
+.footer__ijtimoiy_tarmoqlar .icon{
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 10px;
+   margin-right: 5px;
+   cursor: pointer;
+}
+hr{
+   background-color: #1641971A;
+   border: 0.5px solid #1641971A;
+}
+.footer__bottom{
+   width: 100%;
+   padding-bottom: 10px;
+   padding-top: 3px;
+}
+.footer__bottom p{
+   width: 100%;
+   font-family: Montserrat;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 30px;
+   color: #AFB5C0;
+}
+@media only screen and (max-width: 872px) {
+   .footer__top{
+      width: 100%;
+      flex-direction: column;
+      
+   }
+   .footer__logo{
+      width: 35%;
+   }
+   .footer__menu{
+      width: 100%;
+   }
+   .footer__manzil{
+      width: 100%;
+   }
+   .footer__ijtimoiy_tarmoqlar{
+      width: 100%;
+   }
+}
