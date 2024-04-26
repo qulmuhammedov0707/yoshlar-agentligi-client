@@ -5,7 +5,6 @@ function ImkoniyatlarPage(){
    return(
       <>
          <ImkoniyatlarComponent/>
-         <h1>HAto</h1>
       </>
    )
 }
