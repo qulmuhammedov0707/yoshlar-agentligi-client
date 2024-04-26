@@ -1,3 +1,147 @@
-h2{
-    color: blue;
+.container{
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+ }
+
+.contentHead{
+    text-align: left;
 }
+.contentHead__h1{
+font-family: "Montserrat", sans-serif;
+font-size: 34px;
+font-weight: 700;
+line-height: 40.8px;
+letter-spacing: -0.03em;
+text-align: left;
+color: #8AA7F0;
+}
+.links{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.links__link{
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+color: #295DB5;
+text-decoration: none;
+}
+.links__p{
+    font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+color: #121212;
+}
+.buttons{
+    text-align: center;
+}
+.buttons__button{
+    border: 1px solid #3D7DA9;
+    border-radius: 3px;
+    color: #3D7DA9;
+    background-color: white ;
+    height: 36px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    margin-right: 20px;
+}
+.buttons__button_this{
+    border: none;
+    border-radius: 3px;
+    background-color: #3D7DA9;
+    color: white ;
+    height: 36px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    margin-right: 20px;
+}
+.h3{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.8px;
+letter-spacing: -0.03em;
+text-align: left;
+color: #8AA7F0;
+}
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.card{
+width: 282px;
+height: 460px;
+top: 477px;
+left: 354px;
+gap: 0px;
+border-radius: 3.44px;
+opacity: 0px;
+}
+.card__img{
+width: 282.08px;
+height: 344px;
+gap: 0px;
+opacity: 0px;
+}
+.card__h4{
+    margin-top: -50px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin-left: 5px;
+}
+.messenjer{
+    flex-direction: column;
+    text-align: right;
+    margin-top: -120px;
+}
+.messenjer__button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.icon{
+    width: 10px;
+    height: 10px;
+    color: gray;
+    font-size: 15px;
+}
+.card__lavozim{
+    background-color: white;
+}
+.card__lavozim__p{
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 20.8px;
+text-align: left;
+color: #828282;
+}
+
+@media only screen and (max-width: 1280px) {
+    .container{
+       width: 94%;
+    }
+ }
