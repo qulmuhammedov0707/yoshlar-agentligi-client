@@ -5,6 +5,7 @@ function HududiyBoshqarmalarComponent() {
    return(
       <>
       <h1>HududiyBoshqarmalarComponent</h1>
+      <h2>Working on Project...</h2>
       </>
    )
 }
