@@ -20,6 +20,7 @@ import TadbirlarPage from "../pages/tadbirlar";
 import AgentlikHaqidaPage from "../pages/agetlik_haqida";
 import MaqsadVaVazifalarPage from "../pages/maqsad_va_vazifalar";
 import AgentlikTuzilmasiPage from "../pages/agentlik_tuzilmasi";
+import NotFound from "../pages/404error/404error";
 
 function RouterComponent() {
    return(
@@ -45,6 +46,7 @@ function RouterComponent() {
          <Route path={"/tadbirlar"} element={<TadbirlarPage/>} />
          <Route path={"/maqsad-va-vazifalar"} element={<MaqsadVaVazifalarPage/>} />
          <Route path={"/agentlik-tuzilmasi"} element={<AgentlikTuzilmasiPage/>} />
+         <Route path="/*" element={<NotFound/>} />
 
       </Routes>
    )
