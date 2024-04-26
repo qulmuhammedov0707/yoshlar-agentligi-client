@@ -7,10 +7,7 @@ function App() {
   return (
     <Layout>
       <RouterComponent>
-        
         <AsosiySahifaPage />
-
-        
       </RouterComponent>
     </Layout>
   );
