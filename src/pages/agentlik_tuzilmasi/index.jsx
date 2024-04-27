@@ -7,7 +7,7 @@ function AgentlikTuzilmasiPage(){
    return(
       <>
          <AgentlikTuzilmasiComponent />
-         <MarkaziyApparatComponent />
+       
       </>
    )
 }
