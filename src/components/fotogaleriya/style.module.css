@@ -245,6 +245,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.card__buttonh1 {
+    width: 189px;
+    height: 44px;
+    background: linear-gradient(180deg, #112E42 0%, #3D7DA9 100%);
+    border: none;
+    border-radius: 5px;
+    transform: translate(530px) translateY(-50px);
+
+
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: white;
+}
 @media only screen and (max-width: 1280px) {
     .card__relativa{
         display: none;

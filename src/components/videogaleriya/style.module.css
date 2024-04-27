@@ -1,0 +1,353 @@
+.center__img {
+    width: 190px;
+    height: 25px;
+    background: white;
+    transform: translateY(-23px);
+}
+
+.hero {
+    margin-top: 80px;
+}
+
+.hero__center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center__images {
+    width: 470px;
+    height: 55px;
+    margin-top: -72px;
+}
+
+.bottom__p {
+    width: 45px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #295DB5;
+}
+.bottom__pk{
+    width: 45px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #295DB5;
+}
+.bottom__ps {
+    width: 45px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: black;
+}
+
+.bottom__cards {
+    width: 19%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.page__button {
+    width: 111px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+.hero__page {
+    margin-top: 30px;
+}
+
+.page__pages {
+    padding: 0px 0px 0px 130px;
+}
+
+/* butto page */
+.page__buttons {
+    width: 115px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+.page__buttonp {
+    width: 140px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: white;
+    background: #3D7DA9;
+    margin-right: 28px;
+}
+
+.page__buttonk {
+    width: 75px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+.page__buttonx {
+    width: 95px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+.page__buttonl {
+    width: 180px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+.page__buttonn {
+    width: 80px;
+    height: 34px;
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+}
+
+/* image styles */
+
+.crad__image {
+    width: 396px;
+    height: 300px;
+    border-radius: 5px;
+}
+.card__video{
+    width: 100%;
+    height: 100%;
+}
+.card__section {
+    margin-top: 55px;
+}
+
+.data__button {
+    width: 85px;
+    height: 20px;
+    background: white;
+    border: none;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: center;
+    color: #295DB5;
+    margin-right: 230px;
+}
+
+.card__data {
+    display: flex;
+    padding: 0px 0px 0px 8px;
+    transform: translateY(-289px);
+}
+
+.data__fps {
+    width: 63px;
+    height: 35px;
+    background: #3D7DA9;
+    border: none;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: center;
+    color: white;
+}
+
+.relative__p {
+    width: 320px;
+    height: 44px;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+    color: white;
+    margin-top: -70px;
+    padding: 20px;
+    transform: translateY(-50px);
+}
+.card__position{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card__buttonh1 {
+    width: 189px;
+    height: 44px;
+    background: linear-gradient(180deg, #112E42 0%, #3D7DA9 100%);
+    border: none;
+    border-radius: 5px;
+    transform: translate(530px) translateY(-50px);
+
+
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-width: 1280px) {
+    .card__relativa{
+        display: none;
+    }
+    .page__button {
+        width: 111px;
+        height: 34px;
+        border: 1.6px solid #3D7DA9;
+        border-radius: 5px;
+    
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.5px;
+        text-align: center;
+        color: #3D7DA9;
+        background: white;
+        margin-right: 28px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    .bottom__cards {
+        width: 19%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+    .bottom__ps {
+        width: 45px;
+        height: 16px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        color: black;
+        margin-top: -5px;
+    }
+    .bottom__pk{
+        width: 45px;
+        height: 16px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+        color: #295DB5;
+        margin-top: -5px;
+    }
+    .page__button {
+        width: 111px;
+        height: 34px;
+        border: 1.6px solid #3D7DA9;
+        border-radius: 5px;
+    
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.5px;
+        text-align: center;
+        color: #3D7DA9;
+        background: white;
+        margin-right: 28px;
+        margin-bottom: 10px;
+    }
+   
+}
+@media only screen and (max-width: 858px) {
+    .hero__center {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .center__images {
+        width: 470px;
+        height: 55px;
+        margin-top: -72px;
+        transform: translateY(-40px);
+    }
+    .hero {
+        margin-top: 100px;
+    }
+}
+

@@ -14,7 +14,7 @@ import ImageRestange from "../../assets/image/fotogalereya/Rectangle 34.png"
 function FotogaleriyaComponent() {
    return (
       <>
-         <div className={styles.hero}>
+        <div className={styles.hero}>
             <hr className={styles.hero__hr} />
             <div className="container">
                <div className={styles.hero__center}>
@@ -105,6 +105,7 @@ function FotogaleriyaComponent() {
                      <p className={styles.relative__p}> “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.”</p>
                   </div>
                </div>
+               <button className={styles.card__buttonh1}>Yana Ko'rish</button>
             </div>
          </div>
       </>
