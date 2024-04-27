@@ -4,6 +4,7 @@ import MaqsadVaVazifalarComponent from '../../components/maqsad_va_vazifalar/ind
 function MaqsadVaVazifalarPage(){
    return(
       <>
+      
          <MaqsadVaVazifalarComponent/>
       </>
    )
