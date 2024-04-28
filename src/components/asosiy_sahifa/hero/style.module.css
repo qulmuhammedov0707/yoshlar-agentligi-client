@@ -1,0 +1,71 @@
+.section {
+    margin-top: 0;
+    background-image: url(../../../assets/image/hero/flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 78);
+}
+
+.card {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__item {
+    margin: 240px 0px 0px 0px;
+}
+
+.card__item__h2 {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-size: 38px;
+    font-family: Montserrat;
+}
+
+.card__item__h3 {
+    margin: 0;
+    padding: 0;
+    color: rgba(6, 255, 101, 0.893);
+    font-size: 38px;
+    font-family: Montserrat;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    background-color: rgba(30, 255, 116, 0.868);
+    font-size: 22px;
+    font-family: Montserrat;
+}
+
+.img {
+    height: 480px;
+}
+
+
+@media only screen and (max-width: 1072px) {
+    .card {
+        display: block;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card__item {
+        margin: 0 auto;
+        margin-top: 140px;
+    }
+    .img {
+        display: none;
+    }
+
+}

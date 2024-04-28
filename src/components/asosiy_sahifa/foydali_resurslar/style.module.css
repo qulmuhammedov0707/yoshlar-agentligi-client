@@ -1,0 +1,64 @@
+.card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 20%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 55%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+
+.card__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 720px) {
+    .card__bottom {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .card__bottom {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        display: none;
+    }
+
+    .card__bottom {
+        display: none;
+    }
+}

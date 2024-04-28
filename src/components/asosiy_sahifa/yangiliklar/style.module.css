@@ -1,0 +1,405 @@
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    padding: 30PX;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 30%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 65%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+
+.Img {
+    width: 100%;
+}
+
+.component__left {
+    width: 47%;
+    position: relative;
+}
+
+.component__left__item {
+    bottom: 0px;
+    padding: 10px;
+    background-image: url(../../../assets/image/yangiliklar/Rectangle\ 282.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.component__item {
+    bottom: 0px;
+    padding: 10px;
+    background-image: url(../../../assets/image/yangiliklar/Rectangle\ 282.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.component__right__item {
+    bottom: 0px;
+    padding: 10px;
+    background-image: url(../../../assets/image/yangiliklar/Rectangle\ 282.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.component__h2 {
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Montserrat;
+}
+
+.component__p {
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.component__strong {
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+.component__right__h2 {
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Montserrat;
+}
+
+.component__right__strong {
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+.component__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.component__right__left {
+    width: 45%;
+    margin-left: 15px;
+}
+
+.component__right__card1 {
+    width: 100%;
+    position: relative;
+
+}
+
+.component__right__card2 {
+    width: 100%;
+    position: relative;
+
+}
+
+.component__right__card {
+    width: 47%;
+    position: relative;
+}
+
+.button__card {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #002864d0;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+@media only screen and (max-width: 1210px) {
+    .component__right__card1 {
+        width: 253px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 253px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .component__right__card1 {
+        width: 240px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 240px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .component__right__card1 {
+        width: 230px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 230px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .component__right__card1 {
+        width: 220px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 220px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .component__right__card1 {
+        width: 210px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 210px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .component__right__card1 {
+        width: 210px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 210px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .component__right__card1 {
+        width: 240px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 240px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .component {
+        display: block;
+    }
+
+    .component__left {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .component__right {
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .component__right__card1 {
+        margin-top: 30px;
+        width: 380px;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        margin-top: 30px;
+        width: 380px;
+        position: relative;
+    }
+
+    .component__right__card {
+        margin-top: 30px;
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .component__left {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .component__right {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .component__right {
+        display: block;
+    }
+
+    .component__right__left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .component__right__card1 {
+        width: 45%;
+        position: relative;
+    }
+
+    .component__right__card2 {
+        width: 45%;
+        position: relative;
+    }
+
+    .component__right__card {
+        margin-top: 30px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .component__left__item {
+        width: auto;
+    }
+
+    .component__h2 {
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Montserrat;
+    }
+
+    .component__p {
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Montserrat;
+    }
+
+    .component__strong {
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Montserrat;
+    }
+
+    .component__right__h2 {
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Montserrat;
+    }
+
+    .component__right__strong {
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Montserrat;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .component__right__card {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .component__right__item {
+        width: auto;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .component__left__item {
+        display: none;
+    }
+    .component__item{
+        display: none;
+    }
+
+    .component__right__item {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    .button {
+        width: 170px;
+        height: 50px;
+        text-align: center;
+        background-color: #002864d0;
+        color: rgba(255, 255, 255, 0.893);
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Montserrat;
+    }
+}

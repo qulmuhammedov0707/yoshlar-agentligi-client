@@ -70,6 +70,7 @@ header{
 
 .header_shadow{
    width: 100%;
+   height: 0px;
 }
 .header_shadow img{
    width: 100%;

@@ -1,0 +1,231 @@
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+.card__top {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.link {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #00609c;
+    text-decoration: none;
+}
+
+.Link {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.card__buttton {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffffffd0;
+    color: rgba(0, 101, 184, 0.893);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+    border: none;
+    border: 1px solid rgba(0, 101, 184, 0.893);
+}
+
+.buttonn {
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffffffd0;
+    color: rgba(0, 101, 184, 0.893);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+    border: none;
+    border: 1px solid rgba(0, 101, 184, 0.893);
+}
+
+.card__button {
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    background-color: #0053b9d0;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+    border: none;
+    border: 1px solid rgba(0, 101, 184, 0.893);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 9%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 92%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+
+.component {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.component__card {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.component__left {
+    width: 45%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.component__left__item {
+    top: 30px;
+    left: 20px;
+    padding: 5px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.component__right {
+    width: 30%;
+    height: 500px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img {
+    width: 100%;
+}
+
+.component__h2 {
+    color: rgba(94, 193, 255, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+
+}
+
+.card__p {
+    background-color: #0081d2;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.card__span {
+    padding: 10px;
+    color: rgba(59, 59, 59, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    display: block;
+}
+
+@media only screen and (max-width: 1065px) {
+    .card__top{
+        flex-wrap: wrap;
+    }
+    .link{
+        margin-bottom: 10px;
+    }
+    .Link{
+        margin-bottom: 10px;
+    }
+    .card__buttton {
+        flex-wrap: wrap;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    .buttonn {
+        margin-bottom: 10px;
+    }
+
+    .card__button {
+        margin-bottom: 10px;
+    }
+    .component{
+        display: block;
+    }
+    .component__card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .component__right {
+        width: 90%;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .buttonn {
+        width: 130px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .component__left {
+        width: 100%;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .component__right {
+        width: 90%;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}

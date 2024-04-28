@@ -1,0 +1,46 @@
+.container{
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+ }
+ 
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 30%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 65%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+
+.button__card{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #002864d0;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Montserrat;
+}

@@ -8,12 +8,15 @@ import BizHaqimizdaComponent from "../../components/asosiy_sahifa/biz_haqimizda"
 import FoydaliResurslarComponent from "../../components/asosiy_sahifa/foydali_resurslar";
 import AsosiySahifaImageComponent from "../../components/asosiy_sahifa/asosiy_sahifa_image";
 import BoglanishComponent from "../../components/asosiy_sahifa/boglanish";
+import TanishtiruvComponent from "../../components/asosiy_sahifa/tanishtiruv";
 
-function AsosiySahifaPage(){
-   return(
+
+function AsosiySahifaPage() {
+   return (
       <>
          <HeroComponent />
          <YangiliklarComponent />
+         <TanishtiruvComponent />
          <LoyihalarComponent />
          <MurojaatlarComponent />
          <ImkoniyatlarComponent />

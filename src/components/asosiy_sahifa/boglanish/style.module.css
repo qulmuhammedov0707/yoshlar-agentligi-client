@@ -1,0 +1,145 @@
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+.component {
+    display: flex;
+    align-items: center;
+    padding: 30PX;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 20%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 65%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+.card__item{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.card__p{
+    color: rgba(0, 95, 147, 0.893);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+    text-align: center;
+}
+.form{
+    margin-bottom: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input__text{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    color: rgba(0, 95, 147, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+.input__email{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    color: rgba(0, 95, 147, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+.input__number{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    color: rgba(0, 95, 147, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+.input__text__bottom{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    color: rgba(0, 95, 147, 0.893);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.button__card{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #002864d0;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+@media only screen and (max-width: 890px) {
+    .input__text{
+        width: 100%;
+    }
+    .input__email{
+        width: 100%;
+    }
+    .input__number{
+        width: 100%;
+    }
+    .input__text__bottom{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 390px) {
+  .card__item{
+    width: 100%;
+  }
+  .form{
+    width: 100%;
+  }
+}
+

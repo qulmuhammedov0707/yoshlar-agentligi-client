@@ -1,0 +1,114 @@
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 15%;
+}
+
+.hr {
+    background-color: rgba(118, 135, 186, 0.785);
+    width: 65%;
+}
+
+.card__h2 {
+    color: rgba(58, 76, 130, 0.785);
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Montserrat;
+    display: block;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+.cards__left{
+    width: 50%;
+}
+.cards__h3{
+    color: rgba(48, 48, 48, 0.893);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+    line-height: 1.1;
+}
+.button__card {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #002864d0;
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+.cards__right{
+    width: 47%;
+}
+.cards__right__box{
+    width: 100%;
+}
+@media only screen and (max-width: 1020px) {
+    .cards__left{
+        width: 40%;
+    }
+    .cards__right{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .cards{
+        display: block;
+    }
+    .cards__left{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cards__right{
+       width: 90%;
+       margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cards{
+        display: block;
+    }
+    .cards__left{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cards__right{
+       width: 90%;
+       margin: 0 auto;
+       text-align: center;
+    }
+    .cards__right__box{
+        display: block;
+    }
+    .cards__right__img{
+        display: block;
+    }
+    .button__card{
+        display: flex;
+        justify-content:center;
+        margin: 0 auto;
+    }
+}
