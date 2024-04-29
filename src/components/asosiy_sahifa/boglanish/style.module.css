@@ -8,7 +8,7 @@
 .component {
     display: flex;
     align-items: center;
-    padding: 30PX;
+    padding: 30px;
 }
 
 .card {
@@ -19,12 +19,12 @@
 
 .card__hr {
     background-color: rgba(118, 135, 186, 0.785);
-    width: 20%;
+    width: 10%;
 }
 
 .hr {
     background-color: rgba(118, 135, 186, 0.785);
-    width: 65%;
+    width: 85%;
 }
 
 .card__h2 {

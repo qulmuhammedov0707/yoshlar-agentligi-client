@@ -28,7 +28,6 @@ const BizHaqimizdaComponent = () => {
          title: 'Storage',
       }
    ];
-   const data = [1]
    return (
       <>
          <div className={styles.section}>
@@ -39,38 +38,36 @@ const BizHaqimizdaComponent = () => {
             </div>
             <div className={styles.container}>
                <div className={styles.component}>
-                  {data.map((index) => (
-                     <div key={index} className={styles.cards}>
-                        <div key={index} className={styles.cards__left}>
-                           <h3 className={styles.cards__h3}>O‘zbekiston Respublikasi Yoshlar ishlari agentligi yoshlarga oid davlat siyosatini yangi bosqichga olib chiqish, yoshlar sohasidagi muammolarga samarali yechim topish, ularni har tomonlama qo‘llab-quvvatlash, shuningdek vakolatli organlar faoliyatini samarali tashkil etish hamda muvofiqlashtirishni amalga oshiruvchi davlat tashkilotidir.
-                              <br />
-                              <br />
-                              Agentlikning qabul qilgan qarorlari davlat organlari, boshqa tashkilot va ularning mansabdor shaxslari, shuningdek, fuqarolar uchun bajarilishi majburiy hisoblanadi. Agentlik yuridik shaxs hisoblanib, o‘z nomi yozilgan va Davlat gerbi tasviri tushirilgan muhr va blankalarga, mustaqil balansga, shaxsiy g‘azna hisobvaraqlariga, bank hisobvaraqlariga ega.
-                              <br />
-                              <br />
-                              Agentlik tizimiga agentlikning markaziy apparati, hududiy bo‘linmalari, Yoshlar muammolarini o‘rganish va istiqbolli kadrlarni tayyorlash instituti, “Yoshlar media xoldingi” AJ kiradi. </h3>
-                           <div className={styles.button__card}>
-                              <button className={styles.button} onClick={() => navigate('/rahbariyat/batafsil-rahbariyat')}>Batafsil</button>
-                           </div>
-                        </div>
-                        <div key={index} className={styles.cards__right}>
-                           <Box className={styles.cards__right__box} >
-                              <ImageList  className={styles.cards__right__img} variant="masonry" cols={3} gap={8}>
-                                 {itemData.map((item) => (
-                                    <ImageListItem key={item.img} onClick={() => navigate('/biz-haqimizda')}>
-                                       <img
-                                          srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                          src={`${item.img}?w=248&fit=crop&auto=format`}
-                                          alt={item.title}
-                                          loading="lazy"
-                                       />
-                                    </ImageListItem>
-                                 ))}
-                              </ImageList>
-                           </Box>
+                  <div className={styles.cards}>
+                     <div className={styles.cards__left}>
+                        <h3 className={styles.cards__h3}>O‘zbekiston Respublikasi Yoshlar ishlari agentligi yoshlarga oid davlat siyosatini yangi bosqichga olib chiqish, yoshlar sohasidagi muammolarga samarali yechim topish, ularni har tomonlama qo‘llab-quvvatlash, shuningdek vakolatli organlar faoliyatini samarali tashkil etish hamda muvofiqlashtirishni amalga oshiruvchi davlat tashkilotidir.
+                           <br />
+                           <br />
+                           Agentlikning qabul qilgan qarorlari davlat organlari, boshqa tashkilot va ularning mansabdor shaxslari, shuningdek, fuqarolar uchun bajarilishi majburiy hisoblanadi. Agentlik yuridik shaxs hisoblanib, o‘z nomi yozilgan va Davlat gerbi tasviri tushirilgan muhr va blankalarga, mustaqil balansga, shaxsiy g‘azna hisobvaraqlariga, bank hisobvaraqlariga ega.
+                           <br />
+                           <br />
+                           Agentlik tizimiga agentlikning markaziy apparati, hududiy bo‘linmalari, Yoshlar muammolarini o‘rganish va istiqbolli kadrlarni tayyorlash instituti, “Yoshlar media xoldingi” AJ kiradi. </h3>
+                        <div className={styles.button__card}>
+                           <button className={styles.button} onClick={() => navigate('/rahbariyat/batafsil-rahbariyat')}>Batafsil</button>
                         </div>
                      </div>
-                  ))}
+                     <div className={styles.cards__right}>
+                        <Box className={styles.cards__right__box} >
+                           <ImageList className={styles.cards__right__img} variant="masonry" cols={3} gap={8}>
+                              {itemData.map((item) => (
+                                 <ImageListItem key={item.img} onClick={() => navigate('/biz-haqimizda')}>
+                                    <img
+                                       srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                       src={`${item.img}?w=248&fit=crop&auto=format`}
+                                       alt={item.title}
+                                       loading="lazy"
+                                    />
+                                 </ImageListItem>
+                              ))}
+                           </ImageList>
+                        </Box>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

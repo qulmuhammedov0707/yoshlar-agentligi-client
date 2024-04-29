@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from './style.module.css'
 import Group from "../../../assets/image/yangiliklar/Group.png"
 import Group1 from "../../../assets/image/yangiliklar/photo_2021-09-19_17-51-13 1.png"
@@ -9,7 +9,14 @@ import { useNavigate } from "react-router-dom";
 
 
 function YangiliklarComponent() {
-   const navigate = useNavigate()
+   const [data, setData] = useState([])
+   const navigate = useNavigate();
+   useEffect(() => {
+      fetch('https://apiastro1.vtormetallmm.ru/news')
+         .then(res => res.json())
+         .then(data => setData(data))
+   }, [])
+
 
    return (
       <>
@@ -20,43 +27,43 @@ function YangiliklarComponent() {
                <hr className={styles.hr} />
             </div>
             <div className={styles.container}>
-               <div className={styles.component}>
-                  <div className={styles.component__left} onClick={() => navigate('/yangiliklar')}>
-                     <img src={Group} className={styles.Img} alt="" />
-                     <div className={styles.component__left__item}>
-                        <h2 className={styles.component__h2}>"O'zbekiston Qahramonlari va yoshlar"</h2>
-                        <p className={styles.component__p}>Bugun Toshkent shahar "Yoshlar markazi"da
-                           O'zbekiston Respublikasi Yoshlar ishlari agentligi hamda O'zbekiston Yoshlar Ittifoqi hamkorligida ...</p>
-                        <strong className={styles.component__strong}>21 Sentabr 2021 </strong>
+               {data.map((elem, index) =>
+                  <div  key={index.id} className={styles.component}>
+                     <div className={styles.component__left} onClick={() => navigate('/yangiliklar')}>
+                     <img className={styles.Img} src={elem.image} alt="" />
+                        <div className={styles.component__left__item}>
+                           <h2 className={styles.component__h2}>{elem.title}</h2>
+                           <p className={styles.component__p}>{elem.desc}</p>
+                           <strong className={styles.component__strong}>21 sentyabr 20023</strong>
+                        </div>
+                     </div>
+                     <div className={styles.component__right}>
+                        <div className={styles.component__right__left}>
+                           <div className={styles.component__right__card1} onClick={() => navigate('/yangiliklar')}>
+                              <img className={styles.Img} src={elem.image} alt="" />
+                              <div className={styles.component__item}>
+                                 <h2 className={styles.component__h2}>{elem.title}</h2>
+                                 <strong className={styles.component__strong}>21 sentyabr 20023</strong>
+                              </div>
+                           </div>
+                           <div className={styles.component__right__card2} onClick={() => navigate('/yangiliklar')}>
+                           <img className={styles.Img} src={elem.image} alt="" />
+                              <div className={styles.component__item}>
+                                 <h2 className={styles.component__right__h2}>{elem.title}</h2>
+                                 <strong className={styles.component__right__strong}>21 sentyabr 20023</strong>
+                              </div>
+                           </div>
+                        </div>
+                        <div className={styles.component__right__card} onClick={() => navigate('/yangiliklar')}>
+                        <img className={styles.Img} src={elem.image} alt="" />
+                           <div className={styles.component__right__item}>
+                              <h2 className={styles.component__right__h2}>{elem.title}</h2>
+                              <strong className={styles.component__right__strong}>21 sentyabr 20023</strong>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div className={styles.component__right}>
-                     <div className={styles.component__right__left}>
-                        <div className={styles.component__right__card1} onClick={() => navigate('/yangiliklar')}>
-                           <img className={styles.Img} src={Group1} alt="" />
-                            <div className={styles.component__item}> 
-                               <h2 className={styles.component__h2}>"O'zbekiston Qahramonlari va yoshlar"</h2> 
-                               <strong className={styles.component__strong}>21 Sentabr 2021 </strong> 
-                            </div> 
-                        </div>
-                        <div className={styles.component__right__card2} onClick={() => navigate('/yangiliklar')}>
-                           <img className={styles.Img} src={Group2} alt="" />
-                            <div className={styles.component__item}> 
-                              <h2 className={styles.component__right__h2}>"O'zbekiston Qahramonlari va yoshlar"</h2> 
-                            <strong className={styles.component__right__strong}>21 Sentabr 2021 </strong> 
-                           </div> 
-                        </div>
-                     </div>
-                     <div className={styles.component__right__card} onClick={() => navigate('/yangiliklar')}>
-                        <img className={styles.Img} src={Group3} alt="" />
-                        <div className={styles.component__right__item}>
-                           <h2 className={styles.component__right__h2}>"O'zbekiston Qahramonlari va yoshlar"</h2>
-                           <strong className={styles.component__right__strong}>21 Sentabr 2021 </strong>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
+               )}
                <div className={styles.button__card}>
                   <button className={styles.button} onClick={() => navigate('/yangiliklar/batafsil-yangiliklar')}>Barcha yangiliklar</button>
                </div>

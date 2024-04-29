@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect, useState } from "react";
 import styles from './style.module.css'
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -35,9 +35,15 @@ const LoyihalarComponent = () => {
          title: 'Storage',
       }
    ];
-   const navigate = useNavigate();
+   const [data  , setData] = useState([])
+    const navigate = useNavigate();
+    useEffect(() => {
+      fetch('https://apiastro1.vtormetallmm.ru/projects') 
+      .then(res => res.json())
+      .then(data => setData(data))
+    }, [])
 
-   const data = [1];
+
    return (
       <>
          <div className={styles.section}>
@@ -47,10 +53,11 @@ const LoyihalarComponent = () => {
                <hr className={styles.hr} />
             </div>
             <div className={styles.container}>
+            {data.map((elem ,index) => (
                <Box>
-                  <ImageList variant="masonry" cols={3} gap={8}>
+                  <ImageList key={index.id} variant="masonry" cols={3} gap={8}>
                      {itemData.map((item) => (
-                        <ImageListItem key={item.img} onClick={() => navigate('/loyihalar')}>
+                        <ImageListItem className={styles.images} key={item.img} onClick={() => navigate('/loyihalar')}>
                            <img
                               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                               src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -61,6 +68,7 @@ const LoyihalarComponent = () => {
                      ))}
                   </ImageList>
                </Box>
+                                ))}
                <div className={styles.button__card}>
                   <button className={styles.button} onClick={() => navigate('/loyihalar/batafsil-loyihalar')}>Barcha loyihalar</button>
                </div>
