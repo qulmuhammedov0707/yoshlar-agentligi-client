@@ -1,0 +1,29 @@
+.buttons{
+    text-align: center;
+}
+.buttons__button{
+    border: 1px solid #3D7DA9;
+    border-radius: 3px;
+    color: #3D7DA9;
+    background-color: white ;
+    height: 36px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    margin-right: 20px;
+}
+.buttons__button_this{
+    border: none;
+    border-radius: 3px;
+    background-color: #3D7DA9;
+    color: white ;
+    height: 36px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    margin-right: 20px;
+}
