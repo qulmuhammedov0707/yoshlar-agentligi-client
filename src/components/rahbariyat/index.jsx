@@ -11,10 +11,14 @@ function RahbariyatComponent() {
    const [cardOpen, setCardOpen] = useState(false);
    return(
       <>
+            <div className={styles.top}>
+            <hr className={styles.hr1} />
+            <h1 className={styles.h1}>
+               Rahbariyat
+            </h1>
+            <hr className={styles.hr2} />
+         </div>
       <div className={styles.container}>
-      <div className={styles.contentHead}>
-         <h1 className={styles.contentHead__h1}>Biz haqimizda</h1>
-      </div>
       <div className={styles.links}>
          <p className={styles.links__p}><Link to={'/'} className={styles.links__link}> Asosiy </Link> {`>`} Rahbariyat</p>
       </div>
@@ -29,7 +33,8 @@ function RahbariyatComponent() {
       <div className={styles.cards}>
          {data.map((elem , index) => 
          <>
-               <div key={index}
+         <Link to={`/rahbariyat/batafsil-rahbariyat`} className={styles.Link}>
+         <div key={index}
                 className={styles.card}
                 onMouseEnter={() => setCardOpen(true)}
                 onMouseLeave={() => setCardOpen(false)}>
@@ -50,6 +55,7 @@ function RahbariyatComponent() {
             </>
                   }
                </div>
+         </Link>
          </>
             )
          }

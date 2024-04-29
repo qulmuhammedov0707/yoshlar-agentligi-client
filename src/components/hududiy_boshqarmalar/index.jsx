@@ -11,10 +11,14 @@ function HududiyBoshqarmalarComponent() {
    const [cardOpen, setCardOpen] = useState(false);
    return(
       <>
+            <div className={styles.top}>
+            <hr className={styles.hr1} />
+            <h1 className={styles.h1}>
+               Biz haqimizda
+            </h1>
+            <hr className={styles.hr2} />
+         </div>
       <div className={styles.container}>
-      <div className={styles.contentHead}>
-         <h1 className={styles.contentHead__h1}>Biz haqimizda</h1>
-      </div>
       <div className={styles.links}>
          <p className={styles.links__p}><Link to={'/'} className={styles.links__link}> Asosiy </Link> {`>`} Biz haqimizda</p>
       </div>
@@ -25,7 +29,7 @@ function HududiyBoshqarmalarComponent() {
          <Link to={'/rahbariyat'}><button className={styles.buttons__button}>Rahbariyat</button></Link>
          <Link to={'/hududiy-boshqarmalar'}><button className={styles.buttons__button_this}>Hududiy boshqarmalar</button></Link>
       </div>
-      <h3 className={styles.h3}>Rahbariyat</h3>
+      <h3 className={styles.h3}>Hududiy boshqarmalar</h3>
       <div className={styles.cards}>
          {data.map((elem , index) => 
          <>
