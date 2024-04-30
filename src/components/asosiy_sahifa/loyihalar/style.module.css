@@ -30,7 +30,28 @@
     font-family: Montserrat;
     display: block;
 }
+.card__item {
+    top: 5px;
+    left: 15px;
+    position: absolute;
+}
 
+.card__item__h2 {
+    padding: 5px;
+    color: rgba(94, 193, 255, 0.893);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Montserrat;
+    background-color: rgb(255, 255, 255);
+
+}
+.card__p {
+    color: rgba(35, 35, 35, 0.893);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+
+}
 .button__card{
     display: flex;
     justify-content: center;
@@ -45,4 +66,27 @@
     font-size: 14px;
     font-weight: 400;
     font-family: Montserrat;
+}
+@media only screen and (max-width: 1060px) {
+ .card__item__h2{
+    font-size: 18px;
+    font-weight: 400;
+ }
+ .card__p {
+    font-size: 16px;
+    font-weight: 400;
+}
+}
+@media only screen and (max-width: 560px) {
+    .card__item__h2{
+       font-size: 16px;
+    }
+    .card__p {
+       font-size: 14px;
+   }
+   }
+   @media only screen and (max-width: 460px) {
+    .card__item{
+       display: none;
+    }
 }

@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from './style.module.css'
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -35,13 +35,13 @@ const LoyihalarComponent = () => {
          title: 'Storage',
       }
    ];
-   const [data  , setData] = useState([])
-    const navigate = useNavigate();
-    useEffect(() => {
-      fetch('https://apiastro1.vtormetallmm.ru/projects') 
-      .then(res => res.json())
-      .then(data => setData(data))
-    }, [])
+   const [data, setData] = useState([])
+   const navigate = useNavigate();
+   useEffect(() => {
+      fetch('https://apiastro1.vtormetallmm.ru/projects')
+         .then(res => res.json())
+         .then(data => setData(data))
+   }, [])
 
 
    return (
@@ -53,22 +53,26 @@ const LoyihalarComponent = () => {
                <hr className={styles.hr} />
             </div>
             <div className={styles.container}>
-            {data.map((elem ,index) => (
-               <Box>
-                  <ImageList key={index.id} variant="masonry" cols={3} gap={8}>
-                     {itemData.map((item) => (
-                        <ImageListItem className={styles.images} key={item.img} onClick={() => navigate('/loyihalar')}>
-                           <img
-                              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                              src={`${item.img}?w=248&fit=crop&auto=format`}
-                              alt={item.title}
-                              loading="lazy"
-                           />
-                        </ImageListItem>
-                     ))}
-                  </ImageList>
-               </Box>
-                                ))}
+               {data.map((elem, index) => (
+                  <Box>
+                     <ImageList variant="masonry" cols={3} gap={8}>
+                        {itemData.map((item) => (
+                           <ImageListItem className={styles.images} key={item.img} onClick={() => navigate('/loyihalar')}>
+                              <img
+                                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                 src={`${item.img}?w=248&fit=crop&auto=format`}
+                                 alt={item.title}
+                                 loading="lazy"
+                              />
+                              <div className={styles.card__item}>
+                                 <h2 className={styles.card__item__h2}>{elem.title}</h2>
+                                 <p className={styles.card__p}>{elem.description}</p>
+                              </div>
+                           </ImageListItem>
+                        ))}
+                     </ImageList>
+                  </Box>
+               ))}
                <div className={styles.button__card}>
                   <button className={styles.button} onClick={() => navigate('/loyihalar/batafsil-loyihalar')}>Barcha loyihalar</button>
                </div>

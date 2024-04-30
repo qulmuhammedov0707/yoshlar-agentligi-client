@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from './style.module.css'
-import Group from "../../../assets/image/yangiliklar/Group.png"
-import Group1 from "../../../assets/image/yangiliklar/photo_2021-09-19_17-51-13 1.png"
-import Group2 from "../../../assets/image/yangiliklar/image 2.png"
-import Group3 from "../../../assets/image/yangiliklar/Mask Group (1).png"
 import { useNavigate } from "react-router-dom";
 
 
