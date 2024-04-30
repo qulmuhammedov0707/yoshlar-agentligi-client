@@ -1,3 +1,6 @@
+b{
+    margin-top: 18px;
+}
 .container{
     max-width: 1240px;
     width: 100%;
@@ -66,4 +69,18 @@ color: #121212;
     line-height: 19.5px;
     text-align: center;
     margin-right: 20px;
+}
+.img{
+    width: 282px;
+height: 343px;
+top: 343px;
+left: 351px;
+gap: 0px;
+opacity: 0px;
+
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

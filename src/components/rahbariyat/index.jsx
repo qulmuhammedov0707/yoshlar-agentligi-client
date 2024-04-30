@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import styles from './style.module.css'
-import { Link } from "react-router-dom";
-import bayrog from './bayrog.jpg'
+import { Link, useNavigate } from "react-router-dom";
+import bayrog from '.././././../assets/image/Rahbariyat/bayrog.jpg'
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
+import { useEffect } from "react";
+import axios from "axios";
 
 function RahbariyatComponent() {
-   const data = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ]
+   const navigate = useNavigate()
+   const [data, setData] = useState([])
    const [cardOpen, setCardOpen] = useState(false);
+   const HandleMore = (e) => {
+      navigate(`/rahbariyat/${e.target.id}`)
+    }
+   useEffect(() =>{
+      axios.get(`https://apiastro1.vtormetallmm.ru/leaderships`)
+      .then((data) => setData(data))
+   }, [])
    return(
       <>
             <div className={styles.top}>
@@ -31,31 +41,29 @@ function RahbariyatComponent() {
       </div>
       <h3 className={styles.h3}>Rahbariyat</h3>
       <div className={styles.cards}>
-         {data.map((elem , index) => 
+         {data?.data?.map((elem , index) => 
          <>
-         <Link to={`/rahbariyat/batafsil-rahbariyat`} className={styles.Link}>
-         <div key={index}
+         <div onClick={(e) =>  HandleMore(e)} id={elem.id} key={index}
                 className={styles.card}
                 onMouseEnter={() => setCardOpen(true)}
                 onMouseLeave={() => setCardOpen(false)}>
-                  <img src={bayrog} alt="bu yerda bayrog bor" className={styles.card__img} />
+                  <img id={elem.id} src={bayrog} alt="bu yerda bayrog bor" className={styles.card__img} />
                   {cardOpen && 
             <>
-                  <h4 className={styles.card__h4}>O`zbekiston Bayrogi</h4>
-                  <div className={styles.messenjer}>
-                     <button className={styles.messenjer__button}><FaInstagram  className={styles.icon} /></button> <br />
-                     <button className={styles.messenjer__button}><FaWhatsapp className={styles.icon} /></button> <br />
-                     <button className={styles.messenjer__button}><CiFacebook className={styles.icon} /></button>
+                  <h4 id={elem.id} className={styles.card__h4}>{elem.name}</h4>
+                  <div id={elem.id} className={styles.messenjer}>
+                     <button id={elem.id} className={styles.messenjer__button}><FaInstagram  className={styles.icon} /></button> <br />
+                     <button id={elem.id} className={styles.messenjer__button}><FaWhatsapp className={styles.icon} /></button> <br />
+                     <button id={elem.id} className={styles.messenjer__button}><CiFacebook className={styles.icon} /></button>
                   </div>
-                  <div className={styles.card__lavozim}>
-                     <p className={styles.card__lavozim__p}>
-                        O`zbekiston Respublikasi Davlatb ramzi, O`zbekiston Respublikasi Davlat bayrog'i
+                  <div id={elem.id} className={styles.card__lavozim}>
+                     <p id={elem.id} className={styles.card__lavozim__p}>
+                        {elem.position}
                      </p>
                   </div>
             </>
                   }
                </div>
-         </Link>
          </>
             )
          }
@@ -65,3 +73,4 @@ function RahbariyatComponent() {
    )
 }
 export default RahbariyatComponent
+// https://apiastro1.vtormetallmm.ru/leaderships

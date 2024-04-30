@@ -45,6 +45,7 @@ function RouterComponent() {
          <Route path={"/tadbirlar"} element={<TadbirlarPage/>} />
          <Route path={"/maqsad-va-vazifalar"} element={<MaqsadVaVazifalarPage/>} />
          <Route path={"/agentlik-tuzilmasi"} element={<AgentlikTuzilmasiPage/>} />
+         <Route path="/rahbariyat/:id" element={<RahbariyatMorePage/>}/>
 
       </Routes>
    )
