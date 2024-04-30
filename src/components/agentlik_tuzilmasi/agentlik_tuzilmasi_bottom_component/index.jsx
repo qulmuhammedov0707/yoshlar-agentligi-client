@@ -4,17 +4,24 @@ import bizhaqimizda from './images/bizhaqimizda.png'
 import image from './images/image.png'
 import image1 from './images/image1.png'
 
+
 function AgentlikTuzilmasiComponent() {
    return(
       <>
       <div className="container">
       <div className="bizhaqimizda">
                 <img src={bizhaqimizda}alt="" /><hr className="bizhaqimizda_hr"style={{marginBottom:"100px" , width:"1000px",marginLeft:"280px",marginTop:"-25px"}} />
-                <button style={{padding:"0px",background:"none",marginTop:"-50px",marginBottom:"100px",width:"200px",height:"37px",marginLeft:"30px",border:"3px solid #3D7DA9"}}>Agentlik haqida</button>
-                <button style={{padding:"0px",background:"none",marginTop:"-50px",marginBottom:"100px",width:"200px",height:"37px",marginLeft:"30px",border:"3px solid #3D7DA9"}}>Maqsad va vazifalar</button>
-                <button style={{padding:"0px",background:"none",marginTop:"-50px",marginBottom:"100px",width:"200px",height:"37px",marginLeft:"30px",border:"3px solid #3D7DA9"}}>Agentlikning tuzilmasi</button>
-                 <button style={{padding:"0px",background:"none",marginTop:"-50px",marginBottom:"100px",width:"200px",height:"37px",marginLeft:"30px",border:"3px solid #3D7DA9"}}>Rahbariyat</button>
-                 <button style={{padding:"0px",background:"none",marginTop:"-50px",marginBottom:"100px",width:"200px",height:"37px",marginLeft:"30px",border:"3px solid #3D7DA9"}}>Hududiy boshqarmalar</button>
+                <div className={styles.links}>
+         <p className={styles.links__p}><Link to={'/'} className={styles.links__link}> Asosiy </Link> {`>`} Rahbariyat</p>
+      </div>
+      <div className={styles.buttons}>
+         <Link to={'/biz-haqimizda'}><button className={styles.buttons__button}>Agentlik haqida</button></Link>
+         <Link to={'/maqsad-va-vazifalar'}><button className={styles.buttons__button}>Maqsad va vazifalar</button></Link>
+         <Link to={'/agentlik-tuzilmasi'}><button className={styles.buttons__button}>Agentlikning tuzilmasi</button></Link>
+         <Link to={'/rahbariyat'}><button className={styles.buttons__button_this}>Rahbariyat</button></Link>
+         <Link to={'/hududiy-boshqarmalar'}><button className={styles.buttons__button}>Hududiy boshqarmalar</button></Link>
+      </div>
+
             </div>
             <div className="agentiklar">
                <img src={image} alt="" />
