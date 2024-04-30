@@ -262,6 +262,45 @@
     text-align: center;
     color: white;
 }
+.page__link{
+    border: 1.6px solid #3D7DA9;
+    border-radius: 5px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: center;
+    color: #3D7DA9;
+    background: white;
+    margin-right: 28px;
+    text-decoration: none;
+    padding: 9px 9px;
+}
+.page__yangilik{
+    width: 45px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #295DB5;
+    text-decoration: none;
+    margin-top: 14px;
+}
+.page__yangilip{
+    width: 45px;
+    height: 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    margin-top: 14px;
+}
 @media only screen and (max-width: 1280px) {
     .card__relativa{
         display: none;

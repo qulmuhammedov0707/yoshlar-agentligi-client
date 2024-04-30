@@ -1,14 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from './style.module.css'
+import { Link } from "react-router-dom";
 import ImageYangilik from "../../assets/image/fotogalereya/Yangliklar.png"
 import ImageNewslar from "../../assets/image/fotogalereya/Yangliklar (1).png"
 import ImageNHappy from "../../assets/image/fotogalereya/image xappy.png"
 import ImageFamily from "../../assets/image/fotogalereya/family.png"
 import ImageFace from "../../assets/image/fotogalereya/face.png"
 import ImageRestange from "../../assets/image/fotogalereya/Rectangle 34.png"
-
-
-
 
 
 function FotogaleriyaComponent() {
@@ -24,15 +22,19 @@ function FotogaleriyaComponent() {
                <div className={styles.hero__bottom}>
                   <div className={styles.bottom__cards}>
                      <p className={styles.bottom__p}>Asosiy</p>
-                     <p className={styles.bottom__pk}>Yangliklar</p>
-                     <p className={styles.bottom__ps}>Fotogalereya</p>
+                  <Link className={styles.page__yangilik} to={"/yangiliklar"}>Yangiliklar</Link>
+                     {/* <p className={styles.bottom__pk}>Yangliklar</p> */}
+                  <Link className={styles.page__yangilip} to={"/yangiliklar"}>Fotogalereya</Link>
+                     {/* <p className={styles.bottom__ps}>Fotogalereya</p> */}
                   </div>
                </div>
                <div className={styles.hero__page}>
                   <div className={styles.page__pages}>
-                     <button className={styles.page__button}>Yangliklar</button>
+                  <Link className={styles.page__link} to={"/yangiliklar"}>Yangilliklar</Link>
+                     {/* <button className={styles.page__button}>Yangliklar</button> */}
                      <button className={styles.page__buttons}>Fotogalereya</button>
-                     <button className={styles.page__buttonp}>Videogalereya</button>
+                  <Link className={styles.page__link} to={"/videogaleriya"}>Videogalereya</Link>
+                     {/* <button className={styles.page__buttonp}>Videogalereya</button> */}
                      <button className={styles.page__buttonk}>Blog</button>
                      <button className={styles.page__buttonx}>Tadbirlar</button>
                      <button className={styles.page__buttonl}>Ochiq m'akumotalr</button>

@@ -6,6 +6,7 @@ import ImageNHappy from "../../assets/image/fotogalereya/image xappy.png"
 import ImageFamily from "../../assets/image/fotogalereya/family.png"
 import ImageFace from "../../assets/image/fotogalereya/face.png"
 import ImageRestange from "../../assets/image/fotogalereya/Rectangle 34.png"
+import { Link } from "react-router-dom";
 
 function VideogaleriyaComponent() {
    return(
@@ -20,14 +21,18 @@ function VideogaleriyaComponent() {
                <div className={styles.hero__bottom}>
                   <div className={styles.bottom__cards}>
                      <p className={styles.bottom__p}>Asosiy</p>
-                     <p className={styles.bottom__pk}>Yangliklar</p>
-                     <p className={styles.bottom__ps}>Fotogalereya</p>
+                  <Link className={styles.page__lini} to={"/yangiliklar"}>Ynagiliklar</Link>
+                     {/* <p className={styles.bottom__pk}>Yangliklar</p>
+                      */}
+                     <p className={styles.bottom__ps}>Videogaleriya</p>
                   </div>
                </div>
                <div className={styles.hero__page}>
                   <div className={styles.page__pages}>
-                     <button className={styles.page__button}>Yangliklar</button>
-                     <button className={styles.page__buttons}>Fotogalereya</button>
+                  <Link className={styles.page__link} to={"/yangiliklar"}>Ynagiliklar</Link>
+                     {/* <button className={styles.page__button}>Yangliklar</button> */}
+                  <Link className={styles.page__link} to={"/fotogaleriya"}>Fotogaleriya</Link>
+                     {/* <button className={styles.page__buttons}>Fotogalereya</button> */}
                      <button className={styles.page__buttonp}>Videogalereya</button>
                      <button className={styles.page__buttonk}>Blog</button>
                      <button className={styles.page__buttonx}>Tadbirlar</button>
