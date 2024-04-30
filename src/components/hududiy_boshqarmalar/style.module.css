@@ -80,6 +80,12 @@ color: #8AA7F0;
     flex-wrap: wrap;
     justify-content: space-between;
     display: flex;
+    margin-top: 50px;
+}
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
 }
 .card{
 width: 282px;
@@ -139,29 +145,6 @@ line-height: 20.8px;
 text-align: left;
 color: #828282;
 }
-.top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-   .hr1{
-      width: 15%;
-      background-color: #5D74C5;
-   }
-   .hr2{
-      background-color: #5D74C5;
-      width: 70%;
-   }
-   .h1{
-      color: #5D74C5;
-      font-family: Montserrat;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 40.8px;
-      letter-spacing: -0.03em;
-      text-align: left; 
-      text-transform: uppercase;   
-   }
 @media only screen and (max-width: 1280px) {
     .container{
        width: 94%;

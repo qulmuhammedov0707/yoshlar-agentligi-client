@@ -23,31 +23,33 @@ function RahbariyatMoreComponent() {
          <p className={styles.links__p}><Link to={'/'} className={styles.links__link}> Asosiy </Link> {`>`} Biz haqimizda</p>
                <div className={styles.cards}>
                {data?.data?.map((elem, index) =>
-            <>
-            <div key={index}>
-               <img className={styles.img} src={bayrog} alt="" />
-
-               </div>
-               <div>
-               <h2>{elem.name}</h2>
-               <p>{elem.position}</p>
-               </div>
+            <><div className={styles.card}>
+                              <img className={styles.img} src={bayrog} alt="" />
             <div className={styles.socials}>
             <div className={styles.socials__left}>
-                     <b>Telefon raqami:</b> <br />
-                     <b>Pochta:</b> <br />
-                     <b>Fuqorolar qabul kunlari:</b> <br />
-                  </div>
-                  <div className={styles.right}>
+            <h2>{elem.name}</h2>
+               <p>{elem.position}</p>
+            <div className={styles.div}>
+               <div className={styles.b}>
+               <b>Telefon raqami:</b> <br /> <br />
+                     <b className={styles.bold}>Pochta:</b> <br /> <br />
+                     <b>Fuqorolar qabul kunlari:</b> <br /> <br />
+               </div>
+               <div className={styles.right}>
                      <p>{elem.phone_number}</p>
                      <p>{elem.email}</p>
                      <p>{elem.reception_days}</p>
                   </div>
+                  </div>
+                  </div>
             </div>
+            </div>
+            <div>
             <h2>Ish faoliyati</h2>
             <p>{elem.work_activity}</p>
             <h2>Vazifa va funksiyalari</h2>
             <p>{elem.duties_and_functions}</p>
+            </div>
             </>
             )}   
                </div>

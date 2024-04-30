@@ -82,5 +82,18 @@ opacity: 0px;
 .socials{
     display: flex;
     justify-content: space-between;
+}
+.b{
+}
+.div{
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+}
+.bold{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
