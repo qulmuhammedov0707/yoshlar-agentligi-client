@@ -4,6 +4,7 @@ import styles from './style.module.css'
 import bizhaqimizda from './images/bizhaqimizda.png'
 import image from './images/image.png'
 import image1 from './images/image1.png'
+import { Link } from "react-router-dom";
 
 
 
