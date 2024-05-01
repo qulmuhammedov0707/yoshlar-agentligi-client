@@ -16,6 +16,7 @@ import  close12  from "./images/close12.png";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 
+
 function MaqsadVaVazifalarPage(){
    return(
       <>
